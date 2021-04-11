@@ -18,8 +18,8 @@ jobs:
         - run: git config --global user.name "antonioolvera1995"          
       
   autoVersion:
+    needs: [deploy]
     name: deploy
-      needs: [deploy]
       steps:
         - run: sh version.sh
   
