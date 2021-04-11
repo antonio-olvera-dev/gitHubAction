@@ -1,9 +1,7 @@
 name: deploy
 on:
-  push:
-    branches:
-      - master
-      
+
+
 jobs:
   deploy:
     runs-on: ubuntu-20.04
@@ -16,7 +14,3 @@ jobs:
       - run: git config --global user.email "antonioolvera1995@gmail.com"
       - run: git config --global user.name "antonioolvera1995"          
       - run: sh version.sh
-
-
-      
-      
