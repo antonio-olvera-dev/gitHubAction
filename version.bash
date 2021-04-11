@@ -1,6 +1,7 @@
 #!/bin/sh
 git fetch -p
-VERSION=`git describe head --abbrev=0 --tags`
+sleep 5
+VERSION=`git describe --abbrev=0 --tags`
 VERSION=${VERSION:-'0.9.9'}
 if [ $VERSION == "0.9.9" ];
 then
