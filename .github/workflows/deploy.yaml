@@ -15,11 +15,7 @@ jobs:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
       - run: git config --global user.email "antonioolvera1995@gmail.com"
       - run: git config --global user.name "antonioolvera1995"          
-      # - run: git tag -a 1010 -m "version 1.0"
-      # - run: git push origin 1010
-      # - run: echo $(git tag)
-      - run: bash version.bash
-
-
-      
-      
+      - run: sh version.sh
+   
+    
+  
