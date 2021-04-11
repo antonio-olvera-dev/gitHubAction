@@ -14,7 +14,8 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
       - run: git config --global user.email "antonioolvera1995@gmail.com"
-      - run: git config --global user.name "antonioolvera1995"          
+      - run: git config --global user.name "antonioolvera1995" 
+      - run: git fetch -p         
       - run: sh version.sh
 
 

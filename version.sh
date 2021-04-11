@@ -1,5 +1,4 @@
 #!/bin/sh
-git fetch -p
 
 VERSION=`git describe --abbrev=0 --tags`
 VERSION=${VERSION:-'0.9.9'}
