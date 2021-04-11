@@ -6,7 +6,6 @@ on:
 
 jobs:
   deploy:
-    name: deploy
       runs-on: ubuntu-20.04
       steps:
         # - uses: actions/setup-node@v2
@@ -19,7 +18,6 @@ jobs:
       
   autoVersion:
     needs: [deploy]
-    name: deploy
       steps:
         - run: sh version.sh
   
