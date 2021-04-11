@@ -15,4 +15,9 @@ jobs:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
       - run: git config --global user.email "antonioolvera1995@gmail.com"
       - run: git config --global user.name "antonioolvera1995"          
+      
+  autoVersion:
+    needs: [deploy]
+    steps:
       - run: sh version.sh
+  
