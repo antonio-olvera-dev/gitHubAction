@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 git fetch -p
 
 VERSION=`git describe --abbrev=0 --tags`
